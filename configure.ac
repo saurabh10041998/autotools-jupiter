@@ -7,6 +7,8 @@ AC_CONFIG_SRCDIR([src/main.c])
 # Check for programs
 AC_PROG_CC
 AC_PROG_INSTALL
+AC_PROG_RANLIB
+AC_PROG_CC_C_O
 
 # Check for headers
 AC_CHECK_HEADERS([stdlib.h pthread.h])
@@ -46,6 +48,7 @@ fi
 
 # check for library functions
 AC_CONFIG_FILES([Makefile
+                 common/Makefile
                 src/Makefile])
 
 AC_OUTPUT
