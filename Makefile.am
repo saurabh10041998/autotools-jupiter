@@ -9,7 +9,7 @@ check_SCRIPTS = src/greptest.sh
 TESTS = $(check_SCRITS)
 
 src/greptest.sh:
-    echo './src/jupiter | grep "Hello from .*jupiter!"' > src/greptest.sh
-    chmod +x src/greptest.sh
+	echo './src/jupiter | grep "Hello from .*jupiter!"' > src/greptest.sh
+	chmod +x src/greptest.sh
 
 CLEANFILES = src/greptest.sh
