@@ -1,6 +1,6 @@
 AC_PREREQ([2.69])
 AC_INIT([jupiter], [0.1], [jupiter-bugs@example.com])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 AM_SILENT_RULES([yes])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([src/main.c])
@@ -48,9 +48,7 @@ fi
 # check for typedefs
 
 # check for library functions
-AC_CONFIG_FILES([Makefile
-                 common/Makefile
-                src/Makefile])
+AC_CONFIG_FILES([Makefile])
 
 AC_OUTPUT
 
