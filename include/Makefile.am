@@ -1,1 +1,1 @@
-include_HEADERS = "libjupiter.h"
+include_HEADERS = libjupiter.h
